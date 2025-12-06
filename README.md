@@ -79,7 +79,6 @@ alitas-factory-miaa/
 ├── Proyecto Vision artificial - Alitas factory.pptx  # Presentación del proyecto
 └── README.md                       # Este archivo
 
-
 ---
 
 ⚙️ Requisitos e instalación
