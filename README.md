@@ -79,3 +79,7 @@ alitas-factory-miaa/
 ├── Proyecto Vision artificial - Alitas factory.pptx  # Presentación del proyecto
 └── README.md                       # Este archivo
 
+## Autores
+- Erik Vergara
+- Iván Felipe Morán
+- Josué Cobaleda
