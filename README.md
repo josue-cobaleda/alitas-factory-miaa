@@ -63,25 +63,6 @@ A alto nivel, el flujo del proyecto es:
    - Interpretación de los resultados desde la perspectiva del restaurante.
    - Recomendaciones sobre cámaras, layout y posibles usos futuros.
 
----
-
-## 📁 Estructura del repositorio
-
-```text
-alitas-factory-miaa/
-├── Notebooks/
-│   └── notebook_principal.ipynb    # Notebook con todo el pipeline (EDA, modelos, evaluación, gráficos)
-├── Models/
-│   ├── README.md                   # Descripción de los modelos (pendiente de completar)
-│   ├── yolov11_alitas.pt          # (ejemplo) pesos modelo YOLOv11 para el caso Alitas Factory
-│   └── detr_alitas.pth            # (ejemplo) pesos modelo DETR para el caso Alitas Factory
-├── Evaluación de modelos vf.xlsx   # Archivo Excel con conteos manuales vs modelos y errores por frame
-├── Proyecto Vision artificial - Alitas factory.pptx  # Presentación del proyecto
-└── README.md                       # Este archivo
-
-
----
-
 
 ⚙️ Requisitos e instalación
 
@@ -216,3 +197,21 @@ Iván Felipe Morán
 
 Josué Cobaleda
 
+---
+
+## 📁 Estructura del repositorio
+
+```text
+alitas-factory-miaa/
+├── Notebooks/
+│   └── notebook_principal.ipynb    # Notebook con todo el pipeline (EDA, modelos, evaluación, gráficos)
+├── Models/
+│   ├── README.md                   # Descripción de los modelos (pendiente de completar)
+│   ├── yolov11_alitas.pt          # (ejemplo) pesos modelo YOLOv11 para el caso Alitas Factory
+│   └── detr_alitas.pth            # (ejemplo) pesos modelo DETR para el caso Alitas Factory
+├── Evaluación de modelos vf.xlsx   # Archivo Excel con conteos manuales vs modelos y errores por frame
+├── Proyecto Vision artificial - Alitas factory.pptx  # Presentación del proyecto
+└── README.md                       # Este archivo
+
+
+---
