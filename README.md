@@ -75,126 +75,73 @@ cd alitas-factory-miaa
 2. Crear entorno virtual (opcional pero recomendado)
 python -m venv .venv
 source .venv/bin/activate      # Linux / macOS
-# .venv\Scripts\activate       # Windows PowerShell
+
 
 3. Instalar dependencias
 pip install -r requirements.txt
-
-
 Si no existe requirements.txt, las dependencias mínimas son:
-
 pip install pandas numpy matplotlib openpyxl ultralytics torch torchvision
-
-
 Ultralytics y torch pueden requerir versiones específicas según CPU/GPU. Revisar documentación oficial en caso de errores de instalación.
 
 🚀 Cómo ejecutar el análisis
-
 Abre el notebook principal en tu entorno favorito:
-
 Jupyter Lab / Notebook,
-
 VS Code (con extensión de Jupyter),
-
 Google Colab.
-
 Archivo principal:
-
 Notebooks/notebook_principal.ipynb
 
-
 Ejecuta las celdas en orden:
-
 Entendimiento del negocio y de los datos.
-
 Extracción y muestreo de frames.
-
 Aplicación de modelos (YOLOv11, Transformer).
-
 Lectura de Evaluación de modelos vf.xlsx.
-
 Cálculo de métricas y generación de gráficos.
 
 📊 Evaluación de modelos
-
 La evaluación se realiza comparando, para cada frame muestreado:
-
 Conteo manual (ground truth)
-
 Conteo YOLOv11
-
 Conteo Transformer (DETR)
-
 Métricas utilizadas:
-
 MAE (Mean Absolute Error): error absoluto promedio entre conteo automático y manual.
-
 RMSE (Root Mean Square Error): raíz del error cuadrático medio, penaliza más los errores grandes.
-
 Sesgo (Bias): promedio de (predicción – real); indica si el modelo tiende a sobrecontar o subcontar.
-
 Exactitud con tolerancia ±5: porcentaje de frames en los que la diferencia entre conteo automático y manual es ≤ 5 personas.
 
 El notebook genera:
-
 Curvas de conteo en el tiempo para:
-
 Conteo manual
-
 YOLOv11
-
 Transformer
-
 Gráficos de barras comparando métricas de ambos modelos.
-
 Diagramas de dispersión (real vs predicho) con línea diagonal de referencia.
 
 🧩 Limitaciones y posibles mejoras
-
 Limitaciones actuales:
-
 Se trabaja con un solo punto de vista de cámara y un segmento limitado de video (~5 minutos).
-
 El modelo usa pesos pre-entrenados, sin fine-tuning específico al entorno de Alitas Factory.
-
 No se implementó aún:
-
 tracking de personas (IDs únicos),
-
 métricas de tiempo de permanencia,
-
 segmentación por zonas del local.
-
 Líneas de trabajo futuro:
-
 Entrenar o ajustar los modelos con datos del propio restaurante.
-
 Incorporar multi-object tracking para evitar doble conteo y medir tiempo de permanencia por mesa.
-
 Ampliar la analítica a:
-
 mapas de calor,
-
 detección de filas y tiempos de espera,
-
 clasificación demográfica (hombres/mujeres, rangos de edad).
-
 Integrar la salida de los modelos con:
-
 sistema POS,
-
 paneles de BI,
-
 herramientas de planificación de personal.
 
 👥 Autores
-
 Proyecto desarrollado por estudiantes de la Maestría en Inteligencia Artificial Aplicada (MIAA) – Universidad Icesi:
 
 Erik Vergara
-
 Iván Felipe Morán
-
 Josué Cobaleda
 
 ---
