@@ -141,7 +141,9 @@ herramientas de planificación de personal.
 Proyecto desarrollado por estudiantes de la Maestría en Inteligencia Artificial Aplicada (MIAA) – Universidad Icesi:
 
 Erik Vergara
+
 Iván Felipe Morán
+
 Josué Cobaleda
 
 ---
